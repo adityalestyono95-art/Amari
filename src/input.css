@@ -1,0 +1,19 @@
+@import "tailwindcss";
+.bg-mesh {
+  background-color: #2f7f89;
+  background-image:
+    radial-gradient(at 15% 20%, #5fd0d6 0px, transparent 50%),
+    radial-gradient(at 85% 10%, #f3e3c3 0px, transparent 45%),
+    radial-gradient(at 80% 85%, #1f5f73 0px, transparent 50%),
+    radial-gradient(at 10% 90%, #3aa6a0 0px, transparent 50%);
+}
+@keyframes geser {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.teks-animasi {
+  background-size: 200% 200%;
+  animation: geser 5s ease-in-out infinite;
+}
